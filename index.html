@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Vue Events</h2>
+        </div>
+    </header>
+    <section id="events">
+        <div>
+            <h2 id="event-tittle">Events in Action</h2>
+                <button v-on:click="add(10)">Add</button>
+                <button v-on:click="remove(20)">Remove</button>
+                <p>Result:{{ counter}}</p>
+                <input type="text" placeholder="Enter your name" v-on:input="setName($event, 'Chukwuelue')">
+                <p>Your Name: {{ name }}</p>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
